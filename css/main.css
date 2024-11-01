@@ -1,0 +1,40 @@
+* {
+  margin:0; padding:0;
+}
+
+a {
+  color: black;
+  text-decoration: none
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 400px;
+  background-color: rgb(0, 238, 255);
+}
+header .headline{
+  font-size: 32px;
+}
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
