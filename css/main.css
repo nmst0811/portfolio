@@ -13,6 +13,28 @@ body {
   font-style: normal;
 }
 
+#contents {
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+#About {
+  padding: 2% 0%; 
+}
+
+#Skills {
+  padding: 2% 0%; 
+}
+
+#Works {
+  padding: 2% 0%; 
+}
+
+#Links {
+  padding: 2% 0%; 
+}
+
 header {
   width: 100%;
   padding: 15px 0;
@@ -37,6 +59,78 @@ header .headline{
 
 .nav-list-item:hover {
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+hr {
+	border: 0;
+	height: 8px;
+	background-image:
+		repeating-linear-gradient(45deg, #777 0px, #777 1px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%),
+		repeating-linear-gradient(135deg, #777 0px, #777 1px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%);
+	background-size: 8px 8px;
+}
+
+.cp_qa01 {
+  border-top: 1px solid black;
+}
+.cp_qa01 .cp_actab input {
+  display: none;
+}
+/*質問テキスト*/
+.cp_qa01 .cp_actab {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1px;
+  color: black;
+}
+.cp_qa01 .cp_actab label {
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding: 1em 2em 1em 1em;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+.cp_qa01 .cp_actab .cp_actab-content p {
+  margin: 1em;
+}
+.cp_qa01 .cp_actab label:hover {
+  color: #27c3cf;
+}
+.cp_qa01 .cp_actab input:checked ~ label {
+  color: #27c3cf;
+}
+/*答えテキスト*/
+.cp_qa01 .cp_actab .cp_actab-content {
+  overflow: hidden;
+  max-height: 0;
+  color: #ffffff;
+  background: #27c3cf;
+  transition: max-height 0.5s ease;
+}
+.cp_qa01 .cp_actab input:checked ~ .cp_actab-content {
+  max-height: 40em;
+}
+/*▼アイコン*/
+.cp_qa01 .cp_actab label::after {
+  position: absolute;
+  content: '';
+  right: 10px;
+  width: 15px;
+  height: 10px;
+  background: black;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  transition: all 0.5s ease;
+}
+.cp_qa01 .cp_actab label:hover::after {
+  background: #27c3cf;
+}
+.cp_qa01 .cp_actab input[type=checkbox]:checked + label::after {
+  transform: rotateX(180deg);
+  background: #27c3cf;
 }
 
 /* フッターここから */
