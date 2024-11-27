@@ -19,20 +19,33 @@ body {
   text-align: left;
 }
 
+#contents a {
+  color: #27c3cf;
+  text-decoration: underline;
+}
+
+img {
+  border: solid 1px #777; /* 色：グレー */
+}
+
 #About {
-  padding: 2% 0%; 
+  padding:1% 0%; 
 }
 
 #Skills {
-  padding: 2% 0%; 
+  padding: 1% 0%; 
 }
 
 #Works {
-  padding: 2% 0%; 
+  padding: 1% 0%; 
 }
 
 #Links {
-  padding: 2% 0%; 
+  padding: 1% 0%; 
+}
+
+#contact {
+  padding: 1% 0%;
 }
 
 header {
